@@ -1,6 +1,8 @@
 package com.camel.exemple.dto;
 
 import java.math.BigDecimal;
+import java.math.BigInteger;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -13,7 +15,7 @@ import lombok.NoArgsConstructor;
 public class PropostaDTO {
 
 	private String name;
-	private Integer cpf;
+	private BigInteger cpf;
 	private Integer numberOfPlots;
 	private BigDecimal amountToBeFinanced = new BigDecimal(0);
 	private BigDecimal taxaJuros = new BigDecimal(0);

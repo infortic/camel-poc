@@ -12,7 +12,9 @@ public class ValidaDadosProcess implements Processor{
 		
 		DadosSimulacaoDTO dadosSimulacao = (DadosSimulacaoDTO) exchange.getIn().getBody();
 		
-	//	PropostaDTO proposta = 
+		PropostaDTO proposta = new PropostaDTO().preencherPropostaComDadosSimulacao(dadosSimulacao);
+		exchange.getOut().setBody(proposta);
+		
 	}
 	
 }

@@ -1,6 +1,7 @@
 package com.camel.exemple.dto;
 
 import java.math.BigDecimal;
+import java.math.BigInteger;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -14,7 +15,7 @@ import lombok.NoArgsConstructor;
 public class DadosSimulacaoDTO {
 
 	private String name;
-	private Integer cpf;
+	private BigInteger cpf;
 	private Integer numberOfPlots;
 	private BigDecimal amountToBeFinanced;
 
